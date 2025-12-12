@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sani-Top - Solutions de chauffage écologiques et éco-responsables. Pompes à chaleur, énergies renouvelables. Installation professionnelle et maintenance.">
+    <meta name="keywords" content="chauffage, pompe à chaleur, énergies renouvelables, installation chauffage, climatisation réversible, énergie verte">
+    <meta name="author" content="Sani-Top">
+    <meta property="og:title" content="Sani-Top - Solutions de Chauffage Écologiques">
+    <meta property="og:description" content="Chauffage écologique et énergies renouvelables pour votre maison. Pompes à chaleur haute performance.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0891b2">
+    <title>Sani-Top | Solutions de Chauffage Écologiques & Énergies Renouvelables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Sani-Top",
+		"description": "Solutions de chauffage écologiques et énergies renouvelables",
+		"url": "https://sani-top.com",
+		"telephone": "+33 XXX XXX XXX",
+		"areaServed": "FR",
+		"priceRange": "$$",
+		"image": "https://sani-top.com/logo.png",
+		"sameAs": [
+			"https://facebook.com/sanitop",
+			"https://instagram.com/sanitop"
+		],
+		"knowsAbout": ["Pompes à chaleur", "Chauffage écologique", "Énergies renouvelables", "Installation chauffage"]
+	}
+    </script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <nav class="navbar-container">
+            <div class="logo-container">
+				<a href="#home">
+                	<img src="Img/Sani-Top-Logo_Bigger.png" alt="Sani-Top Logo - Solutions de chauffage écologiques" class="logo">
+				</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#avantages">Avantages</a></li>
+                <li><a href="#eco">Écologie</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#contact" class="cta-nav">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Chauffage Écologique pour un Confort Durable</h1>
+            <p class="hero-subtitle">Découvrez nos solutions de chauffage innovantes avec énergies renouvelables. Réduisez votre consommation énergétique de <span class="highlight">jusqu'à 70%</span> tout en améliorant votre confort.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Obtenir un Devis Gratuit</a>
+                <a href="#services" class="btn btn-secondary">En Savoir Plus</a>
+            </div>
+            <div class="eco-badge">
+                <span class="eco-icon">🌱</span>
+                <span>100% Éco-Responsable</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="heat-pump-illustration">
+                <!--<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="40" y="60" width="120" height="100" rx="10" fill="url(#grad1)" opacity="0.9"/>
+                    <circle cx="100" cy="110" r="35" fill="none" stroke="#fbbf24" stroke-width="3"/>
+                    <circle cx="100" cy="110" r="25" fill="none" stroke="#fbbf24" stroke-width="2"/>
+                    <path d="M 100 85 L 100 135" stroke="#fbbf24" stroke-width="2"/>
+                    <path d="M 75 110 L 125 110" stroke="#fbbf24" stroke-width="2"/>
+                    <path d="M 70 70 Q 100 40 130 70" stroke="#10b981" stroke-width="2" fill="none"/>
+                    <circle cx="70" cy="70" r="4" fill="#10b981"/>
+                    <circle cx="130" cy="70" r="4" fill="#10b981"/>
+                    <path d="M 50 150 L 70 130" stroke="#fbbf24" stroke-width="2"/>
+                    <path d="M 150 150 L 130 130" stroke="#fbbf24" stroke-width="2"/>
+                </svg>-->
+				<img src="Img/Sani-Top-Logo_Bigger.png" alt="Sani-Top Logo">
+            </div>
+        </div>
+    </section>
+
+	<!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Nos Services Professionnels</h2>
+            <p>Des solutions adaptées à tous vos besoins de chauffage</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>Pompes à Chaleur</h3>
+                <p>Systèmes haute performance utilisant les énergies renouvelables pour chauffer votre habitation efficacement et durablement.</p>
+                <ul class="features-list">
+                    <li>Pompes à chaleur air-air</li>
+                    <li>Pompes à chaleur air-eau</li>
+                    <li>Géothermie</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💨</div>
+                <h3>Climatisation Réversible</h3>
+                <p>Chauffage en hiver, climatisation en été. Une seule installation pour votre confort toute l'année avec économies d'énergie.</p>
+                <ul class="features-list">
+                    <li>Climatisation silencieuse</li>
+                    <li>Réglage par zone</li>
+                    <li>Économies énergétiques</li>
+                </ul>
+            </div>
+
+            <div class="service-card eco-featured">
+                <div class="service-icon">🌍</div>
+                <h3>Énergies Renouvelables</h3>
+                <p>Système hybride combinant fioul, gaz ou électricité avec panneaux solaires thermiques pour une efficacité maximale.</p>
+                <ul class="features-list">
+                    <li>Panneaux solaires thermiques</li>
+                    <li>Chaudière gaz condensation</li>
+                    <li>Récupération chaleur</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Maintenance & Entretien</h3>
+                <p>Services d'entretien régulier pour garantir la performance optimale de votre système de chauffage et sa durabilité.</p>
+                <ul class="features-list">
+                    <li>Contrats d'entretien</li>
+                    <li>Dépannage rapide</li>
+                    <li>Révisions annuelles</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Diagnostic Énergétique</h3>
+                <p>Analyse complète de votre consommation et audit personnalisé pour identifier les solutions les plus adaptées.</p>
+                <ul class="features-list">
+                    <li>Audit thermique</li>
+                    <li>Étude de faisabilité</li>
+                    <li>Recommandations</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3>Aides & Subventions</h3>
+                <p>Nous vous accompagnons dans l'obtention des aides gouvernementales (MaPrimeRénov', CEE, etc.) pour réduire votre investissement.</p>
+                <ul class="features-list">
+                    <li>MaPrimeRénov'</li>
+                    <li>Certificats d'Économie d'Énergie</li>
+                    <li>Éco-PTZ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+	<!-- Avantages Section -->
+    <section id="avantages" class="benefits">
+        <div class="section-header">
+            <h2>Pourquoi Choisir Sani-Top ?</h2>
+            <p>Excellence, fiabilité et engagement écologique</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-number">1</div>
+                <h3>Expertise de 25 ans</h3>
+                <p>Une équipe d'experts certifiés avec une expérience solide dans le domaine du chauffage écologique et des énergies renouvelables.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-number">2</div>
+                <h3>Technologies Dernière Génération</h3>
+                <p>Utilisation des meilleures marques et technologies pour des systèmes performants, silencieux et durables.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-number">3</div>
+                <h3>Économies Garanties</h3>
+                <p>Réduction de 60-70% de votre facture énergétique grâce à nos solutions éco-responsables et haute performance.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-number">4</div>
+                <h3>Intervention Rapide</h3>
+                <p>Installation professionnelle en 3-5 jours et dépannage d'urgence disponible 24h/24, 7j/7.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-number">5</div>
+                <h3>Garantie Totale</h3>
+                <p>Garantie de 10 ans sur le matériel et garantie décennale sur les installations pour votre tranquillité d'esprit.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-number">6</div>
+                <h3>Service Client Excellence</h3>
+                <p>Équipe dédiée en français disponible pour répondre à toutes vos questions et vous accompagner dans votre transition énergétique.</p>
+            </div>
+        </div>
+    </section>
+
+	<!-- Écologie Section -->
+    <section id="eco" class="ecology-section">
+        <div class="section-header">
+            <h2>Notre Engagement Écologique</h2>
+            <p>Réduire l'empreinte carbone, un foyer à la fois</p>
+        </div>
+
+        <div class="ecology-content">
+            <div class="ecology-text">
+                <h3>Chauffage Durable pour la Planète</h3>
+                <p>Chez Sani-Top, l'écologie n'est pas qu'une tendance, c'est notre mission. Nos solutions de chauffage basées sur les énergies renouvelables permettent à nos clients de réduire leur impact environnemental tout en réalisant des économies substantielles.</p>
+
+                <div class="eco-stats">
+                    <div class="stat">
+                        <h4>-70%</h4>
+                        <p>Émissions CO₂</p>
+                    </div>
+                    <div class="stat">
+                        <h4>-65%</h4>
+                        <p>Consommation énergétique</p>
+                    </div>
+                    <div class="stat">
+                        <h4>25 ans</h4>
+                        <p>Durée de vie moyenne</p>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 2rem;">Les bénéfices environnementaux:</h4>
+                <ul class="eco-list">
+                    <li>✓ Zéro combustible fossile avec les pompes à chaleur</li>
+                    <li>✓ Récupération de chaleur naturelle (air, sol, eau)</li>
+                    <li>✓ Réduction drastique des gaz à effet de serre</li>
+                    <li>✓ Certification RGE (Reconnu Garant de l'Environnement)</li>
+                    <li>✓ Conformité aux normes environnementales européennes</li>
+                    <li>✓ Matériaux recyclables et durables</li>
+                </ul>
+            </div>
+
+            <div class="ecology-visual">
+                <div class="eco-graphic">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Earth -->
+                        <circle cx="150" cy="200" r="80" fill="#10b981" opacity="0.3"/>
+                        <circle cx="150" cy="200" r="80" fill="none" stroke="#10b981" stroke-width="2"/>
+
+						<!-- Leaves around earth -->
+                        <g id="leaf" transform="translate(150, 120)">
+                            <path d="M 0 0 Q 10 -15 0 -30 Q -10 -15 0 0" fill="#10b981" stroke="#059669" stroke-width="1"/>
+                        </g>
+                        <use href="#leaf" transform="rotate(45 150 200)"/>
+                        <use href="#leaf" transform="rotate(90 150 200)"/>
+                        <use href="#leaf" transform="rotate(135 150 200)"/>
+                        <use href="#leaf" transform="rotate(180 150 200)"/>
+                        <use href="#leaf" transform="rotate(225 150 200)"/>
+                        <use href="#leaf" transform="rotate(270 150 200)"/>
+                        <use href="#leaf" transform="rotate(315 150 200)"/>
+
+						<!-- Sun rays -->
+                        <circle cx="150" cy="200" r="100" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+                        <line x1="150" y1="70" x2="150" y2="40" stroke="#fbbf24" stroke-width="2"/>
+                        <line x1="220" y1="200" x2="250" y2="200" stroke="#fbbf24" stroke-width="2"/>
+                        <line x1="80" y1="200" x2="50" y2="200" stroke="#fbbf24" stroke-width="2"/>
+                        <line x1="215" y1="135" x2="235" y2="115" stroke="#fbbf24" stroke-width="2"/>
+
+						<!-- Text -->
+                        <text x="150" y="350" text-anchor="middle" font-size="18" font-weight="bold" fill="#0891b2" font-family="Poppins">Énergie Verte</text>
+                        <text x="150" y="375" text-anchor="middle" font-size="14" fill="#666" font-family="Inter">Pour un futur durable</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Ce Que Disent Nos Clients</h2>
+            <p>Découvrez les témoignages de clients satisfaits</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"L'installation de la pompe à chaleur a transformé notre maison. Chauffage plus performant et facture d'électricité divisée par 3! Les professionnels de Sani-Top sont excellents."</p>
+                <div class="testimonial-author">
+                    <div class="avatar">JM</div>
+                    <div>
+                        <h4>Jean-Marie D.</h4>
+                        <p>Propriétaire à Lyon</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Nous avions peur du coût, mais Sani-Top nous a aidés à trouver les aides gouvernementales. Au final, l'investissement s'est amorti en 5 ans. Très professionnel!"</p>
+                <div class="testimonial-author">
+                    <div class="avatar">SB</div>
+                    <div>
+                        <h4>Sophie B.</h4>
+                        <p>Marseille</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Installation rapide et impeccable. Le système est ultra silencieux et nous permet de réduire notre impact environnemental. Merci pour votre dévouement!"</p>
+                <div class="testimonial-author">
+                    <div class="avatar">MC</div>
+                    <div>
+                        <h4>Marc & Claire</h4>
+                        <p>Toulouse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Demandez Votre Diagnostic Gratuit</h2>
+            <p>Contactez-nous dès aujourd'hui pour une consultation sans engagement</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Nos Coordonnées</h3>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>Téléphone</h4>
+                        <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:contact@sani-top.com">contact@sani-top.com</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Adresse</h4>
+                        <p>123 Rue de l'Innovation<br>75000 Paris, France</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div>
+                        <h4>Horaires</h4>
+                        <p>Lun-Ven: 8h00 - 19h00<br>Sam: 9h00 - 13h00</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Votre Nom *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Votre Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Votre Téléphone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Type de Service Intéressé *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Sélectionnez un service</option>
+                        <option value="pompe-chaleur">Pompe à Chaleur</option>
+                        <option value="climatisation">Climatisation Réversible</option>
+                        <option value="energie-renouvelable">Énergies Renouvelables</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="diagnostic">Diagnostic Énergétique</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre Message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                    <label for="rgpd">J'accepte la politique de confidentialité et souhaite être contacté(e)</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Envoyer Ma Demande</button>
+                <p class="form-note">Réponse sous 24h ouvrables</p>
+            </form>
+        </div>
+    </section>
+
+	<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À Propos</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#eco">Écologie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Pompes à Chaleur</a></li>
+                    <li><a href="#services">Climatisation</a></li>
+                    <li><a href="#services">Énergies Renouvelables</a></li>
+                    <li><a href="#services">Maintenance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#legal">Mentions Légales</a></li>
+                    <li><a href="#privacy">Politique de Confidentialité</a></li>
+                    <li><a href="#cookies">Gestion des Cookies</a></li>
+                    <li><a href="#conditions">Conditions Générales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+                <p class="newsletter-note">Conseils gratuits sur l'efficacité énergétique directement dans votre boîte mail.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sani-Top - Solutions de Chauffage Écologiques. Tous droits réservés.</p>
+            <p>Entreprise RGE | Certifications: QualiPAC, QualiChauf, Quali-EnR</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
