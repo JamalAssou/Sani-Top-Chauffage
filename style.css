@@ -77,7 +77,7 @@ body {
 }
 
 .logo-container .logo {
-    height: 50px;
+    height: 90px;
     width: auto;
 }
 
@@ -632,6 +632,48 @@ body {
     text-decoration: underline;
 }
 
+.address-link {
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Garde la couleur du texte original */
+    display: block; /* Rend toute la zone de l'adresse cliquable */
+    transition: opacity 0.3s;
+}
+
+.address-link:hover {
+    opacity: 0.8;
+    color: var(--primary); /* Change la couleur au survol pour montrer que c'est cliquable */
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary); /* Rouge Sani-Top */
+    color: var(--white);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Contact Form */
 .contact-form {
     background: var(--white);
@@ -702,6 +744,60 @@ body {
     text-align: center;
 }
 
+/* Bouton WhatsApp Sticky */
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* Vert officiel WhatsApp */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-sticky svg {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-sticky:hover {
+    transform: scale(1.1);
+    background-color: #128C7E; /* Vert plus foncé au survol */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation optionnelle pour attirer l'oeil */
+@keyframes pulse-whatsapp {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-sticky {
+    animation: pulse-whatsapp 2s infinite;
+}
+
+/* On le cache sur de très petits écrans si besoin ou on réduit sa taille */
+@media (max-width: 480px) {
+    .whatsapp-sticky {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .whatsapp-sticky svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
 /* Footer */
 .footer {
     background: var(--text-dark);
@@ -717,7 +813,7 @@ body {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 50px;
     margin-bottom: 15px;
     filter: brightness(0) invert(1);
 }
