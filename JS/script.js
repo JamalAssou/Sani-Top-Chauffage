@@ -43,49 +43,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	})
 })
 
-// Contact form submission
-const contactForm = document.getElementById("contactForm")
-const notification = document.getElementById("notification")
-
-function showNotification(message, isError = false) {
-	notification.textContent = message
-	notification.classList.toggle("error", isError)
-	notification.classList.add("show")
-
-	setTimeout(() => {
-		notification.classList.remove("show")
-	}, 4000)
-}
-
-contactForm.addEventListener("submit", async (e) => {
-	e.preventDefault()
-
-	const formData = new FormData(contactForm)
-	const data = Object.fromEntries(formData)
-
-	// Validation
-	if (!data.name || !data.email || !data.phone || !data.service) {
-		showNotification("Veuillez remplir tous les champs obligatoires.", true)
-		return
-	}
-
-	// Email validation
-	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-	if (!emailRegex.test(data.email)) {
-		showNotification("Veuillez entrer une adresse email valide.", true)
-		return
-	}
-
-	// Simulate form submission
-	console.log("[v0] Form submitted:", data)
-
-	// Show success message
-	showNotification("Votre demande a été envoyée avec succès ! Nous vous contacterons sous 24h.")
-
-	// Reset form
-	contactForm.reset()
-})
-
 // Scroll animations
 const observerOptions = {
 	threshold: 0.1,
@@ -116,3 +73,11 @@ document.querySelectorAll(".btn-primary, .btn-phone, .btn-arrow").forEach((btn) 
 		console.log("[v0] CTA clicked:", btnText)
 	})
 })
+
+// Reset le formulaire au chargement de la page
+window.addEventListener('pageshow', function(event) {
+	const form = document.querySelector('form');
+	if (form) {
+		form.reset();
+	}
+});

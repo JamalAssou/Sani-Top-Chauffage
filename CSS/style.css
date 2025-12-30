@@ -883,30 +883,6 @@ body {
     color: var(--white);
 }
 
-/* Notification */
-.notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #10b981;
-    color: var(--white);
-    padding: 16px 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateX(400px);
-    transition: transform 0.3s;
-    z-index: 9999;
-    font-weight: 500;
-}
-
-.notification.show {
-    transform: translateX(0);
-}
-
-.notification.error {
-    background: #ef4444;
-}
-
 /* Responsive Design */
 @media (max-width: 968px) {
     .navbar-container {
