@@ -20,7 +20,8 @@ html {
 }
 
 body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    /* Utilisation des polices système : Rapide et conforme RGPD */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     color: var(--text-dark);
     line-height: 1.6;
     background: var(--white);
@@ -836,6 +837,8 @@ body {
 
 .footer-col ul li {
     margin-bottom: 10px;
+    color: #999;       /* Harmonise le texte simple (TVA, adresse) */
+    font-size: 14px;    /* Aligné sur la taille des liens */
 }
 
 .footer-col ul li a {
